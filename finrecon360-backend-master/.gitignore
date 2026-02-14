@@ -201,6 +201,12 @@ PublishScripts/
 # Local .NET/NuGet caches (if created inside repo)
 .nuget/
 .dotnet/
+.dotnet-home/
+.dnet/
+.dnet/.local/share/NuGet/
+.dnet/.local/share/nuget/
+.dotnet/.local/share/NuGet/
+.dotnet/.local/share/nuget/
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
