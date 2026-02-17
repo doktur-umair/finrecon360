@@ -16,10 +16,9 @@ This file focuses on local setup, testing, and day-to-day development. Existing 
 ## Backend Setup
 1. Create a local `.env` from the example:
    - Copy `finrecon360-backend-master/finrecon360-backend/.env.example` to `.env`
-   - Fill in Brevo settings and `ADMIN_EMAILS`
-2. Update DB connection string in `finrecon360-backend-master/finrecon360-backend/appsettings.json`:
-   - `ConnectionStrings:DefaultConnection`
-3. Run the API:
+   - Fill in Brevo settings, `ADMIN_EMAILS`, and the `ConnectionStrings__DefaultConnection` value
+   - Set `Jwt__Key`, `Jwt__Issuer`, and `Jwt__Audience`
+2. Run the API:
 
 ```bash
 cd finrecon360-backend-master/finrecon360-backend
@@ -62,5 +61,5 @@ ng test --watch=false
 
 ## Development Notes
 - `.env` is local-only and ignored by git. Use `.env.example` as the template.
-- Update `Jwt:Key` in `appsettings.json` for anything beyond local development.
+- Use env vars to configure DB and JWT settings (see `.env.example`).
 - If SQL Server is not local, adjust the connection string accordingly.
