@@ -9,3 +9,4 @@ Quick links:
 
 Notes:
 - Secrets are not committed. Configure local env vars using `.env.example` in the backend folder.
+- This repo no longer uses git submodules; the frontend is tracked directly.
